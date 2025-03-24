@@ -1,13 +1,16 @@
+import { NavBar } from "./components/NavBar"
+import { Categories } from "./components/Categories"
 
 
+export function App() {
 
-
-function App() {
- 
 
   return (
-    <h1>Olá</h1>
+    <>
+		<NavBar />
+
+		<Categories />
+		</>
   )
 }
 
-export default App

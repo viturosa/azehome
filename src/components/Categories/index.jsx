@@ -1,0 +1,35 @@
+import { Category } from "../Category";
+import './style.css'
+
+const categories = [
+	{
+		id: 1,
+		title: 'Decoração',
+		imageUrl: 'src/assets/imgs/deco.png'
+	},
+	{
+		id: 2,
+		title: 'Mobília',
+		imageUrl: 'https://static.zarahome.net/8/photos4/2025/V/4/1/p/7369/072/851/7369072851_7_1_1.jpg?t=1706633898481&imwidth=955&imformat=generic'
+	},
+	{
+		id: 3,
+		title: 'Sentidos',
+		imageUrl: 'https://static.zarahome.net/8/photos4/2025/V/4/1/p/3494/509/800/3494509800_2_7_1.jpg?t=1706785107943&imwidth=478&imformat=generic'
+	},
+	{
+		id: 4,
+		title: 'Têxtil',
+		imageUrl: 'https://static.zarahome.net/assets/public/ee0c/bcbe/51b141c2be0c/9c6935c408ce/44150088250-a7/44150088250-a7.jpg?ts=1740492672239&f=auto&w=478'
+	},
+
+		]
+
+			export function Categories() {
+			return (
+				<div className="container-home">
+					{categories.map((category) => {
+						return <Category category={category} key={category.id} />;
+					})}
+				</div>
+			)}

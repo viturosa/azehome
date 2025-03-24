@@ -1,0 +1,78 @@
+.sign-container {
+
+	display: flex;
+	flex-direction: column;
+	width: 380px;
+
+
+
+	h2 {
+
+		margin: 10px 0;
+
+	}
+
+
+
+	.buttons-container-sign {
+
+		display: flex;
+		justify-content: space-between;
+
+	}
+	form {
+		margin-top: 50px;
+	}
+
+}
+
+
+
+.button-login {
+
+	min-width: 165px;
+	width: auto;
+	height: 50px;
+	font-size: 15px;
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	border: none;
+
+
+
+	&:hover {
+
+		background-color: white;
+
+		color: black;
+		border: 1px solid black;
+		cursor: pointer;
+
+	}
+
+}
+
+
+
+.button-login-google {
+
+	min-width: 165px;
+	width: auto;
+	height: 50px;
+	font-size: 15px;
+	background-color: #4f5866;
+	color: white;
+	border: none;
+
+
+
+	&:hover {
+
+		background-color: #495261;
+		border: none;
+		cursor: pointer;
+
+	}
+
+}
