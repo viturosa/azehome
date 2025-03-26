@@ -1,5 +1,6 @@
 import { Category } from "../Category";
 import './style.css'
+import { Link } from "react-router-dom";
 
 const categories = [
 	{
@@ -27,9 +28,13 @@ const categories = [
 
 			export function Categories() {
 			return (
-				<div className="container-home">
+				<Link  to ='Shop'>
+						<div className="container-home">
 					{categories.map((category) => {
 						return <Category category={category} key={category.id} />;
 					})}
 				</div>
+
+				</Link>
+
 			)}
