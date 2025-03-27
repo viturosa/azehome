@@ -1,9 +1,12 @@
-import './style.css'
+import * as Style from './style'
 
 export function Category({ category }) {
+	const { title, imageUrl } = category
+
 			return (
-				<div className="category-card">
-					<img src={category.imageUrl} alt={category.title} />
-				</div>
-			);
+				<Style.CategoryContainer>
+				<Style.ImageBackgroud style={{ backgroundImage: `url(${imageUrl})` }} />
+
+			</Style.CategoryContainer>
+			)
 		}

@@ -28,7 +28,7 @@ const categories = [
 
 			export function Categories() {
 			return (
-				<Link  to ='Shop'>
+				<Link  to='Shop'>
 						<div className="container-home">
 					{categories.map((category) => {
 						return <Category category={category} key={category.id} />;
@@ -36,5 +36,6 @@ const categories = [
 				</div>
 
 				</Link>
+
 
 			)}

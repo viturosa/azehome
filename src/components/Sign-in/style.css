@@ -20,6 +20,7 @@
 		justify-content: space-between;
 
 	}
+
 	form {
 		margin-top: 50px;
 	}
@@ -61,7 +62,7 @@
 	width: auto;
 	height: 50px;
 	font-size: 15px;
-	background-color: #4f5866;
+	background-color: #4285f4;
 	color: white;
 	border: none;
 
@@ -69,7 +70,7 @@
 
 	&:hover {
 
-		background-color: #495261;
+		background-color: #357ae8;
 		border: none;
 		cursor: pointer;
 

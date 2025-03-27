@@ -3,11 +3,15 @@ import { Logo } from '../Logo'
 import './style.css'
 import { Outlet, Link } from 'react-router-dom'
 import { useContext } from 'react'
- import { UserContext } from '../../context/userContext'
- import { singOutAuthUser } from '../../utils/firebase'
+import { UserContext } from '../../context/userContext'
+import { singOutAuthUser } from '../../utils/firebase'
+import { CartContext } from '../../context/cartContext'
+import { CartDropdown } from '../CartDropdown'
 
 export function NavBar() {
+	const { isCartOpen } = useContext(CartContext)
 	const { currentUser } = useContext(UserContext)
+
 	return (
 		<>
 		<div className='nav-bar'>
@@ -19,8 +23,9 @@ export function NavBar() {
  						<Link to="auth">LOGIN</Link>
  					)}
 			<CartIcon />
-		</div>
+		{isCartOpen && <CartDropdown />}
 
+		</div>
 		<Outlet />
 		</>
 

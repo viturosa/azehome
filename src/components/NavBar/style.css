@@ -1,6 +1,6 @@
 .nav-bar {
 	display: flex;
-	align-items: center;
+	align-items:end;
 	position: fixed;
 	margin-left: 15%;
 }

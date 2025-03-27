@@ -7,7 +7,8 @@ import { ToastContainer } from 'react-toastify'
 import { App } from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { UserProvider } from './context/userContext.jsx'
- import { CategoriesProvider } from './context/categoriesContext.jsx'
+import { CategoriesProvider } from './context/categoriesContext.jsx'
+import { CartProvider } from './context/cartContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -16,9 +17,11 @@ createRoot(document.getElementById('root')).render(
 			<GlobalStyle />
 			<ToastContainer />
  							<UserProvider>
- 					<CategoriesProvider>
- 						<App />
- 					</CategoriesProvider>
+ 								<CategoriesProvider>
+									<CartProvider>
+										<App />
+									</CartProvider>
+ 								</CategoriesProvider>
  				</UserProvider>
 		</ThemeProvider>
 		</BrowserRouter>
