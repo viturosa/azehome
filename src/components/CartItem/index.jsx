@@ -6,7 +6,7 @@ import './style.css'
  		<div className="cart-item-container">
  			<div>
  				<img src={imageUrl} />
- 				<div className="item-datails">
+ 				<div className="item-details">
  					<span className="item-name">{name}</span>
  					<span className="item-price">
  						{quantity} x R$ {price}

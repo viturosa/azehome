@@ -6,14 +6,15 @@
 
 	img {
 		width: 30%;
+		height: 100%;
 	}
 
 	div {
 		display: flex;
 	}
 
-	.item-datails {
-		width: 70%;
+	.item-details {
+		width: 80%;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -22,7 +23,7 @@
 
 		.item-name,
 		.item-price {
-			font-size: 16px;
+			font-size: 15px;
 		}
 	}
 }

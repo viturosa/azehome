@@ -2,6 +2,7 @@ import { useContext } from 'react'
 import { CartItem } from '../CartItem'
 import { CartContext } from '../../context/cartContext'
 import { useNavigate } from 'react-router-dom'
+import './style.css'
 
 export function CartDropdown() {
 	const { cartItems } = useContext(CartContext)

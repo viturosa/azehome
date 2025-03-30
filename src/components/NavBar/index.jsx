@@ -18,11 +18,11 @@ export function NavBar() {
 			<Logo  />
 			<Link to='/'> AZe Home</Link>
 			{currentUser ? (
- 						<Link onClick={singOutAuthUser} className='auth-button'>LOGOUT</Link>
+ 						<Link onClick={singOutAuthUser} className='nav-button'>LOGOUT</Link>
  					) : (
- 						<Link to="auth" className='auth-button'>LOGIN</Link>
+ 						<Link to="auth" className='nav-button'>LOGIN</Link>
  					)}
-			<CartIcon />
+			<CartIcon className='cart-icon'/>
 		{isCartOpen && <CartDropdown />}
 
 		</div>

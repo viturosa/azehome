@@ -6,7 +6,7 @@ const categories = [
 	{
 		id: 1,
 		title: 'Decoração',
-		imageUrl: 'src/assets/imgs/deco.png'
+		imageUrl: 'https://static.zarahome.net/assets/public/e7cb/6f35/f723434eb21c/fb8ca8320f65/01/01.jpg?ts=1727878627932'
 	},
 	{
 		id: 2,

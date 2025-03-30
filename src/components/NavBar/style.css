@@ -1,10 +1,26 @@
 .nav-bar {
-	display: flex;
-	align-items:flex-end;
-	position: fixed;
-	margin-left: 15%;
+	height: 70px;
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: space-between;
+ 	margin-top: 25px;
+ 	align-items: center;
+
 }
 
-.auth-button {
-	padding-left: 5%;
+.nav-button {
+	width: 50%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: flex-end;
+ 	gap: 32px;
+
+ 	a {
+ 		cursor: pointer;
+ 	}
+}
+
+.cart-icon {
+	margin-right: 10px;
+	padding-left: 0px;
 }
