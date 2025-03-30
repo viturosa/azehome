@@ -18,9 +18,9 @@ export function NavBar() {
 			<Logo  />
 			<Link to='/'> AZe Home</Link>
 			{currentUser ? (
- 						<Link onClick={singOutAuthUser}>LOGOUT</Link>
+ 						<Link onClick={singOutAuthUser} className='auth-button'>LOGOUT</Link>
  					) : (
- 						<Link to="auth">LOGIN</Link>
+ 						<Link to="auth" className='auth-button'>LOGIN</Link>
  					)}
 			<CartIcon />
 		{isCartOpen && <CartDropdown />}

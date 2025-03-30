@@ -1,6 +1,10 @@
 .nav-bar {
 	display: flex;
-	align-items:end;
+	align-items:flex-end;
 	position: fixed;
 	margin-left: 15%;
+}
+
+.auth-button {
+	padding-left: 5%;
 }

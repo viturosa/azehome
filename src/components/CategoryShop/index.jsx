@@ -16,7 +16,7 @@ import { useContext, useEffect, useState } from 'react'
 
  	return (
  		<>
- 			<h2 className="title-category-shop">{category.toUpperCase()}</h2>
+ 			<h2 className="title-category-shop">{category}</h2>
  			<div className="category-shop-container">
  				{products &&
  					products.map((product) => (

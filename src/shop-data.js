@@ -4,20 +4,20 @@ export const SHOP_DATA = [
 		items: [
 			{
 				id: 1,
-				name: 'Brown Brim',
-				imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-				price: 25
+				name: 'bandeja de cerâmica',
+				imageUrl: 'https://static.zarahome.net/assets/public/525d/0f7c/650f42c89826/2ede37481273/41321043250-f/41321043250-f.jpg?ts=1734966315813&f=auto&w=955',
+				price: 390
 			},
 			{
 				id: 2,
-				name: 'Blue Beanie',
-				imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-				price: 18
+				name: 'vaso de cerâmica',
+				imageUrl: 'https://static.zarahome.net/assets/public/8e32/a2b0/59624474b4a0/4f34984b03f4/48371046500-f/48371046500-f.jpg?ts=1728309551777&f=auto&w=955',
+				price: 290
 			},
 			{
 				id: 3,
-				name: 'Brown Cowboy',
-				imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+				name: 'jogo de louça',
+				imageUrl: 'https://static.zarahome.net/assets/public/a97e/89b6/7c78468bad2f/823d47fc3444/43208000983BHNI-h/43208000983BHNI-h.jpg?ts=1742472309674&f=auto&w=1910',
 				price: 35
 			},
 			{

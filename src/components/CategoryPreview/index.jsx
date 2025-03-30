@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
  	return (
  		<div className="category-preview-container">
  			<h2>
- 				<Link to={title}>{title.toUpperCase()}</Link>
+ 				<Link to={title}>{title}</Link>
  			</h2>
  			<div className="preview">
  				{products
