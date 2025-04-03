@@ -4,7 +4,7 @@ import { Shop } from './pages/shop'
 import { Home } from "./pages/home"
 import { Route, Routes } from 'react-router-dom'
 import { Checkout } from "./pages/checkout"
-import { Detail } from "./pages/detail"
+import  Detail from "./pages/detail"
 
 export function App() {
 
