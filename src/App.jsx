@@ -10,17 +10,18 @@ export function App() {
 
 
   return (
-   <Routes>
+		<Router>
+			<NavBar />
 
-		<Route path='/' element={<NavBar />}>
+			<Routes>
 		<Route index element={<Home />} />
 		<Route path='auth' element={<Auth />} />
-		<Route path='shop/*' element={<Shop />} />
+		<Route path='/' element={<Shop />} />
 		<Route path='checkout' element={<Checkout />} />
-		<Route path='/detail/:categoryId/:productId' element={<Detail />} />
-		</Route>
-
+		<Route path='/detail/:id' element={<Detail />} />
 		</Routes>
+
+		</Router>
 
   )
 }
