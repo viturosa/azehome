@@ -2,7 +2,7 @@ import { Button } from '../UI/Button'
 import './style.css'
 import { useContext } from 'react'
 import { CartContext } from '../../context/cartContext'
-
+import { Link } from 'react-router-dom'
 export function ProductCard({ product }) {
 
  	const { name, price, imageUrl } = product
@@ -13,7 +13,9 @@ export function ProductCard({ product }) {
 
  	return (
  		<div className="product-card-container">
- 			<img src={imageUrl} alt={`${name}`} />
+ 			<Link to={`/detail/${product.id}`}>
+                 <img src={imageUrl} alt={`${name}`} />
+             </Link>
  			<div className="footer">
  				<span className="name">{name}</span>
  				<span className="price">{price}</span>
