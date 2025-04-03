@@ -1,28 +1,27 @@
-import { NavBar } from "./components/NavBar"
+import { Routes, Route } from 'react-router-dom'
+import { NavBar } from './components/NavBar'
 import { Auth } from './pages/auth'
 import { Shop } from './pages/shop'
-import { Home } from "./pages/home"
-import { Route, Routes } from 'react-router-dom'
-import { Checkout } from "./pages/checkout"
-import  Detail from "./pages/detail"
+import { Home } from './pages/home'
+import { Checkout } from './pages/checkout'
+import Detail from './pages/detail'
+import { AnimatePresence } from 'framer-motion'
+import { PageTransition } from './components/UI/Animation/PageTransition'
 
 export function App() {
-
-
   return (
-		<Router>
-			<NavBar />
-
+    <>
+      <NavBar />
+			<AnimatePresence mode="wait">
 			<Routes>
-		<Route index element={<Home />} />
-		<Route path='auth' element={<Auth />} />
-		<Route path='/' element={<Shop />} />
-		<Route path='checkout' element={<Checkout />} />
-		<Route path='/detail/:id' element={<Detail />} />
-		</Routes>
+        <Route path="/" element={<PageTransition><Home /></PageTransition>} />
+        <Route path="/auth" element={<PageTransition><Auth /></PageTransition>} />
+        <Route path="/shop/*" element={<PageTransition><Shop /></PageTransition>} />
+        <Route path="/checkout" element={<PageTransition><Checkout /></PageTransition>} />
+        <Route path="/detail/:id" element={<PageTransition><Detail /></PageTransition>} />
+      </Routes>
+			</AnimatePresence>
 
-		</Router>
-
+    </>
   )
 }
-
