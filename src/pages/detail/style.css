@@ -10,3 +10,17 @@ img {
 	width: 300px;
 }
 }
+.img-square {
+  background-color: white;
+  border: 1px solid black;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.img-selector {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
